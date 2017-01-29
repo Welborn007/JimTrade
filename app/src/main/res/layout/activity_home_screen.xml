@@ -1,0 +1,122 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#1653A4"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/view"
+            android:layout_height="1dp"
+            android:background="#6ECEF4"/>
+
+       <ImageView
+           android:src="@drawable/home_brochure"
+           android:layout_above="@+id/imageView2"
+           android:layout_marginBottom="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="80dp" />
+
+        <TextView
+            android:layout_below="@+id/imageView2"
+            android:text="India's Largest Online Business Directory"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#0F54AF"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:background="@drawable/home_screen"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/imageView2" >
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/find_products1"
+                android:layout_centerInParent="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <ImageView
+                android:id="@+id/find_products2"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/MyJimtrade_1"
+                android:layout_centerInParent="true"
+                android:layout_width="70dp"
+                android:layout_height="60dp" />
+
+            <ImageView
+                android:id="@+id/MyJimtrade_2"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/inquiry_1"
+                android:layout_centerInParent="true"
+                android:layout_width="70dp"
+                android:layout_height="60dp" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/inquiry_2"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

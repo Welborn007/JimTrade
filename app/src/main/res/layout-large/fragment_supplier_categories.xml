@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:padding="10dp"
+    tools:context="jimtrade.com.jimtrade.Supplier_contents.Supplier_Categories_Fragment">
+
+
+    <TextView
+        android:id="@+id/suppcat"
+        android:text="Supplier Categories :"
+        android:textColor="#0F54AF"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ListView
+        android:layout_below="@id/suppcat"
+        android:clickable="true"
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

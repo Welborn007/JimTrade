@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context="jimtrade.com.jimtrade.SubCategoryActivity"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#1653A4"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#6ECEF4"/>
+
+        <RelativeLayout
+            android:id="@+id/sample_content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@android:color/white">
+
+            <fragment
+                android:name="jimtrade.com.jimtrade.Subcategories_Fragment"
+                android:id="@+id/fragment_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <fragment
+                android:name="jimtrade.com.jimtrade.Product_Listing"
+                android:layout_below="@id/fragment_place"
+                android:id="@+id/fragment_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

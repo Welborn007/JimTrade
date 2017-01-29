@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="jimtrade.com.jimtrade.Inquiry.Already_Registered">
+
+    <EditText
+        android:id="@+id/login_id"
+        android:hint="Login Id"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/Password_inquiry"
+        android:hint="Password"
+        android:layout_below="@+id/login_id"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/Send_Enquiry"
+        android:text="Submit"
+        style="@style/button_text"
+        android:background="@drawable/layout_bg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Password_inquiry"
+         />
+
+    <TextView
+        android:id="@+id/Forgot_inquiry"
+        android:layout_below="@+id/Send_Enquiry"
+        android:layout_marginTop="10dp"
+        android:textColor="#0F54AF"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot Password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

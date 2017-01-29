@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">JimTrade</string>
+    <string name="country_prompt">Choose a country</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Activity and Fragment Header's -->
+    <string name="title_activity_home_screen">JimTrade Appl</string>
+    <string name="title_activity_search_item">search_item</string>
+    <string name="title_activity_categories_item">Categories_item</string>
+    <string name="title_activity_my__jim_trade">My_JimTrade</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register_new">Register</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_sub_category">SubCategory</string>
+    <string name="title_activity_product_screen">Product</string>
+    <string name="title_activity_product_screen_fragments">Product Screen</string>
+    <string name="title_activity_product__info_">Product_Info</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_supplier_screen_fragments">Supplier Screen</string>
+    <string name="title_activity_logged__user_details">Logged_User_details</string>
+    <string name="title_activity_manage__inquiries__supplier">Manage_Inquiries_Supplier</string>
+    <string name="title_activity_manage__inquiries__buyer">Manage_Inquiries_Buyer</string>
+
+
+    <!-- navigation drawer -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+    <!-- activity_categories_item -->
+    <string name="categories">Categories</string>
+    <string name="count">Products</string>
+
+    <!-- activity_forgot_password -->
+    <string name="forgot_pass">To request a new password, please enter your most current registered email in JimTrade.com below:</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email_forgot">Please Enter Your EmailId</string>
+    <string name="submit_btn_forgot">Submit</string>
+
+    <!-- activity_logged_user_details -->
+    <string name="contact_details">Contact Details</string>
+    <string name="contact_person">Contact Person:</string>
+    <string name="designation">Designation / Job Title:</string>
+    <string name="company_name">Company Name:</string>
+    <string name="email_id">Email Id:</string>
+    <string name="gender">Gender:</string>
+    <string name="address">Address:</string>
+    <string name="city">City:</string>
+    <string name="state">State:</string>
+    <string name="zip">Postal / ZIP Code:</string>
+    <string name="country">Country:</string>
+    <string name="tel">Telephone no.</string>
+    <string name="mob">Mobile no.</string>
+    <string name="fax">Fax:</string>
+    <string name="website">Website:</string>
+
+    <!-- activity_login -->
+    <string name="already_register">Already Registered ?</string>
+    <string name="login_email">E-mail Id</string>
+    <string name="login_password">Password</string>
+    <string name="Login_signin">Sign In</string>
+    <string name="login_new">New Member - Join Free</string>
+    <string name="log_forgot_password">Forgot password ?</string>
+
+    <!-- activity_manage_inquiries_buyer -->
+    <string name="buyer_inquiries">Manage Inquiries</string>
+    <string name="buyer_sent">Sent Items</string>
+
+    <!--  activity_manage_inquiries_supplier -->
+    <string name="supplier_inquiries">Manage Inquiries</string>
+    <string name="supplier_inbox">Inbox</string>
+    <string name="supplier_sent">Sent Items</string>
+
+    <!-- activity_my_jim_trade -->
+    <string name="dashboard">Dashboard</string>
+    <string name="text_rewards">Confirm your email address and earn 100 Reward points</string>
+    <string name="btn_rewards">Confirm email address</string>
+    <string name="receive_inquiries">Inquiries Received</string>
+    <string name="subscribe">Subscribed Categories</string>
+    <string name="new_products">New products in your categories</string>
+    <string name="dashboard_sent">Sent Items</string>
+    <string name="views">Page Views</string>
+    <string name="btn_profile">Personal Profile</string>
+    <string name="btn_inquiries">Manage Inquiries</string>
+
+    <!-- activity_register_new -->
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="btn_reset">Reset</string>
+    <string name="title_activity_second__level__category">Second_Level_Category</string>
+    <string name="title_activity_image_zoom">Image_zoom</string>
+    <string name="title_activity_send__inquiry">Send_Inquiry</string>
+    <string name="title_activity_inquiry__login">Inquiry_Login</string>
+    <string name="title_activity_send__inquiry__supplier">Send_Inquiry_Supplier</string>
+    <string name="title_activity_sent">Sent</string>
+    <string name="title_activity_receive">Receive</string>
+    <string name="title_activity_sent_body">Sent_body</string>
+    <string name="title_activity_receive_body">Receive_body</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_privacy_policy">PrivacyPolicy</string>
+    <string name="title_activity_terms_of_service">TermsOfService</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="title_activity_faqs">FAQs</string>
+    <string name="title_activity_otp">OTP</string>
+    <string name="title_activity_contact__details">Contact_Details</string>
+    <string name="title_activity_edit_contact_details">Edit_contact_details</string>
+    <string name="title_activity_post__inquiry">Post_Inquiry</string>
+    <string name="title_activity_reward_points">Reward_points</string>
+
+
+    
+
+</resources>

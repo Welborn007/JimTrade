@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="jimtrade.com.jimtrade.Rewards.Reward_points">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/header"
+            android:text="Reward Points"
+            android:textSize="18dp"
+            android:textColor="#0F54AF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_below="@+id/header"
+            android:id="@+id/table1"
+            android:layout_marginTop="5dp"
+            android:background="#F5F5F5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/TextView1"
+                    android:text="Activities"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:paddingLeft="16dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/TextView2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Points"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:paddingRight="16dp"
+                    android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_below="@+id/table1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#1653A4"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_below="@+id/view3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#6ECEF4"/>
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view4"
+            ></ListView>
+
+        <TableLayout
+            android:id="@+id/table2"
+            android:layout_below="@id/android:list"
+            android:background="@drawable/customborder"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/Tv1"
+                    android:text="Total Reward Points Earned"
+                    android:textSize="16dp"
+                    android:padding="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/Tv2"
+                    android:text="Points"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/Tv3"
+                    android:text="Redeemed Points"
+                    android:textSize="16dp"
+                    android:padding="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/Tv4"
+                    android:text="Points"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:padding="16dp"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/Tv5"
+                    android:text="Balance Points"
+                    android:textSize="16dp"
+                    android:padding="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/Tv6"
+                    android:text="Points"
+                    android:textSize="16dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/table2"
+            style="@style/button_text"
+            android:text="Redeem Points"
+            android:background="@drawable/layout_bg"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

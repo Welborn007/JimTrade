@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_home"
+        android:icon="@drawable/home"
+        android:title="Login"
+        android:showAsAction="always" >
+
+    </item>
+
+    <item android:id="@+id/action_login"
+        android:icon="@drawable/man"
+        android:title="Login"
+        android:showAsAction="always" >
+
+        <menu>
+            <item android:id="@+id/Login"
+                android:title="Login"
+                app:showAsAction="ifRoom" />
+
+            <item android:id="@+id/Register"
+                android:title="Register"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/Menu"
+        android:title="Menu"
+        android:icon="@drawable/dots"
+        android:showAsAction="always">
+
+        <menu>
+
+            <item android:id="@+id/aboutus"
+                android:title="About Us"
+                app:showAsAction="ifRoom"/>
+
+            <item android:id="@+id/faq"
+                android:title="FAQ\'s"
+                app:showAsAction="ifRoom"/>
+
+            <item android:id="@+id/feedback"
+                android:title="Feedback"
+                app:showAsAction="ifRoom"/>
+
+            <item android:id="@+id/contact"
+                android:title="Contact Us"
+                app:showAsAction="ifRoom"/>
+
+
+
+        </menu>
+
+    </item>
+
+
+</menu>
+

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="10dp"
+    tools:context="jimtrade.com.jimtrade.Image_zoom">
+
+    <ImageButton
+        android:id="@+id/cancel_img"
+        android:src="@drawable/cancel"
+        android:background="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <ListView
+        android:id="@+id/list2"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+
+</RelativeLayout>

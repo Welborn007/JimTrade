@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Your inquiry has been sent successfully to selected suppliers."
+        android:layout_height="wrap_content"
+        android:textSize="24dp" />
+
+    <RelativeLayout
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialogButtonHOME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:textColor="#2D64B6"
+            android:textStyle="bold"
+            android:text=" Home "
+            android:layout_marginTop="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/dialogButtonEXIT"
+            android:layout_toRightOf="@+id/dialogButtonHOME"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:textColor="#2D64B6"
+            android:layout_marginLeft="140dp"
+            android:text=" Back "
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

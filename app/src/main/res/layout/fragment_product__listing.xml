@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/ListofProducts"
+        android:textColor="#0F54AF"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="#F5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_below="@+id/ListofProducts"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_below="@id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row" >
+    </ListView>
+
+    <Button
+        android:id="@+id/click"
+        android:background="@drawable/top"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_width="40dp"
+        android:layout_height="42dp" />
+
+</RelativeLayout>

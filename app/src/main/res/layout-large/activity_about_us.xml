@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="jimtrade.com.jimtrade.AboutUs">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#1653A4"/>
+
+        <View
+            android:id="@+id/view1yu"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#6ECEF4"/>
+
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/aboutus"
+                android:text="About Us"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#0F54AF"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/aboutid"
+                android:layout_below="@+id/aboutus"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="JimTrade is the India\'s leading business-to-business (B2B) Media Company that facili\tates global trade, with a particular focus on the Indian market, by providing information to international buyers and integrated marketing services to suppliers. JimTrade provides the complete and upto date information on Indian products and suppliers for buyers. JimTrade is the number one destination for buyers to source Indian products and for Indian sellers to find trade opportunities and promote their businesses online.\n\nJimTrade has information of more than 1,50,000 Indian suppliers and products. JimTrade has thousands of registered buyers who access this information daily." android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                />
+
+            <TextView
+                android:id="@+id/version"
+                android:text="v1.0"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_below="@+id/aboutid"
+                android:text="Terms of Service"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0F54AF" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_below="@+id/terms"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#1a010103"/>
+
+            <TextView
+                android:id="@+id/privacy"
+                android:layout_below="@+id/view1"
+                android:text="Privacy Policy"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="#0F54AF" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_below="@+id/privacy"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#1a010103"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

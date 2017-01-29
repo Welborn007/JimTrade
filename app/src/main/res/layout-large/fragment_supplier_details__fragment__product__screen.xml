@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="jimtrade.com.jimtrade.Products_contents.Supplier_details_Fragment_Product_Screen"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+
+            <TextView
+                android:text="Supplier Name:"
+                android:id="@+id/name"
+                android:textColor="#0F54AF"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/suppname"
+                android:layout_below="@+id/name"
+                android:textColor="#0F54AF"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_below="@+id/suppname"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#1a010103"/>
+
+
+            <TextView
+                android:text="Address:"
+                android:id="@+id/address"
+                android:textStyle="bold"
+                android:textColor="#0F54AF"
+                android:textSize="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/suppadd"
+                android:layout_below="@+id/address"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_below="@+id/suppadd"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#1a010103"/>
+
+            <TextView
+                android:text="Fax:"
+                android:id="@+id/fax"
+                android:textColor="#0F54AF"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/faxno"
+                android:layout_below="@+id/fax"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_below="@+id/faxno"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#1a010103"/>
+
+            <TableLayout
+                android:id="@+id/phone_holder"
+                android:layout_below="@+id/view3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Phone:"
+                    android:id="@+id/phone"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:textColor="#0F54AF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/phone_icon1"
+                        android:background="@drawable/phone_icon"
+                        android:visibility="gone"
+                        android:layout_below="@+id/phone"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:id="@+id/phoneno1"
+                        android:layout_below="@+id/phone"
+                        android:textSize="24dp"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/phone_icon1"
+                        android:text="sample"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/phone_icon2"
+                        android:background="@drawable/phone_icon"
+                        android:layout_below="@+id/phone_icon1"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:id="@+id/phoneno2"
+                        android:layout_marginTop="10dp"
+                        android:textSize="24dp"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:text="sample"
+                        android:layout_toRightOf="@+id/phone_icon2"
+                        android:layout_below="@+id/phoneno1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/phone_icon3"
+                        android:background="@drawable/phone_icon"
+                        android:layout_toLeftOf="@+id/phoneno3"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/phone_icon2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:id="@+id/phoneno3"
+                        android:layout_marginTop="10dp"
+                        android:textSize="24dp"
+                        android:visibility="gone"
+                        android:text="sample"
+                        android:gravity="center"
+                        android:layout_below="@+id/phoneno2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/phone_icon4"
+                        android:background="@drawable/phone_icon"
+                        android:layout_toLeftOf="@+id/phoneno4"
+                        android:layout_below="@+id/phone_icon3"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:id="@+id/phoneno4"
+                        android:layout_marginTop="10dp"
+                        android:textSize="24dp"
+                        android:visibility="gone"
+                        android:text="sample"
+                        android:gravity="center"
+                        android:layout_below="@+id/phoneno3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/phone_icon5"
+                        android:background="@drawable/phone_icon"
+                        android:layout_toLeftOf="@+id/phoneno5"
+                        android:visibility="gone"
+                        android:layout_below="@+id/phone_icon4"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:id="@+id/phoneno5"
+                        android:layout_marginTop="10dp"
+                        android:textSize="24dp"
+                        android:visibility="gone"
+                        android:text="sample"
+                        android:gravity="center"
+                        android:layout_below="@+id/phoneno4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <Button
+                android:text="Inquire Now"
+                android:layout_below="@+id/phone_holder"
+                android:background="@drawable/layout_bg"
+                android:layout_marginTop="20dp"
+                style="@style/button_tablet"
+                android:id="@+id/inquiry"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+        tools:context="jimtrade.com.jimtrade.Mails.Sent">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/view1"
+        android:textColor="#0F54AF"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Inquiries Sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/under_layer"
+        android:layout_below="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1a010103"/>
+    
+    <ListView
+        android:focusable="false"
+        android:clickable="true"
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/under_layer"
+        android:layout_height="match_parent"
+        android:divider="#1a010103"
+        android:dividerHeight="1dp"
+        android:background="@android:color/white" />
+
+
+</RelativeLayout>

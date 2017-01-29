@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"    android:background="@android:color/white"
+    tools:context="jimtrade.com.jimtrade.Supplier_contents.Supplier_Product_Fragment">
+
+
+       <TextView
+        android:id="@+id/ListofProducts"
+           android:textSize="24dp"
+           android:layout_width="match_parent"
+           android:textColor="#0F54AF"
+           android:textStyle="bold"
+           android:background="#f5f5f5"
+           android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row"
+        android:background="@android:color/white">
+    </ListView>
+
+</LinearLayout>

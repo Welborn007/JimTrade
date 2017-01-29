@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="jimtrade.com.jimtrade.Feedback">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/feedbacktext"
+                android:text="Feedback"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="#0F54AF"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/contact"
+                android:hint="E-mail address"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/feedbacktext"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:textSize="24dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/feed"
+                android:lines="10"
+                android:hint="Write something..."
+                android:layout_below="@+id/contact"
+                android:layout_marginTop="20dp"
+                android:textAlignment="textStart"
+                android:textSize="24dp"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/send"
+                android:text=" Send "
+                android:layout_marginTop="20dp"
+                style="@style/button_tablet"
+                android:background="@drawable/layout_bg"
+                android:layout_below="@+id/feed"
+                />
+
+            <TextView
+                android:id="@+id/support"
+                android:layout_marginTop="20dp"
+                android:textSize="24dp"
+                android:layout_below="@+id/send"
+                android:text="For further information, help or queries reach us at"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_below="@+id/support"
+                android:textSize="24dp"
+                android:text="jupiter@jimtrade.com"
+                android:textColorLink="#0F54AF"
+                android:autoLink="email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

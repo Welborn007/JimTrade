@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/list_row_selector"
+android:padding="8dp" >
+
+<!-- Thumbnail Image -->
+<com.android.volley.toolbox.NetworkImageView
+    android:id="@+id/thumbnail"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginRight="8dp" />
+
+<!-- Product Name -->
+<TextView
+    android:id="@+id/product_name"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#0F54AF"
+    android:layout_alignTop="@+id/thumbnail"
+    android:layout_toRightOf="@+id/thumbnail"
+    android:textSize="13dp"
+    android:textStyle="bold" />
+
+<!-- Product ID -->
+<TextView
+    android:id="@+id/product_id"
+    android:visibility="invisible"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/product_name"
+    android:layout_marginTop="1dip"
+    android:layout_toRightOf="@+id/thumbnail"
+    />
+
+
+<TextView
+    android:layout_toRightOf="@+id/thumbnail"
+    android:id="@+id/supplier"
+    android:layout_below="@+id/product_id"
+    android:text="Category:"
+    android:textSize="12dip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+<!-- Category name -->
+<TextView
+    android:id="@+id/cat_name"
+    android:layout_width="match_parent"
+    android:textStyle="bold"
+    android:textColor="#0F54AF"
+    android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/product_id"
+    android:layout_toRightOf="@+id/supplier"
+    android:textSize="12dip" />
+
+
+<!-- Category ID -->
+<TextView
+    android:layout_width="wrap_content"
+    android:id="@+id/category_id"
+    android:visibility="invisible"
+    android:layout_height="wrap_content" />
+
+
+<!-- Category Index -->
+<TextView
+    android:visibility="invisible"
+    android:id="@+id/catindex"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/count123"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Inquire Now"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:textScaleX="1"
+        android:textSize="12sp"
+        android:padding="3dp"
+        android:layout_height="25dp"
+        android:layout_width="100dp"
+        android:background="@drawable/layout_bg"
+        style="@style/button_text"
+        android:id="@+id/inquiry"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="jimtrade.com.jimtrade.Products_contents.Product_details_fragment"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+        <TextView
+            android:text="Product Description:"
+            android:id="@+id/desc"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="#0F54AF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/product_name2"
+            android:layout_below="@+id/desc"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_below="@+id/product_name2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#1a010103"/>
+
+
+        <TextView
+            android:text="Technical Specifications:"
+            android:id="@+id/specifications"
+            android:textStyle="bold"
+            android:textColor="#0F54AF"
+            android:layout_below="@id/view1"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/spec"
+            android:textSize="16dp"
+            android:layout_below="@+id/specifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+

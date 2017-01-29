@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jimtrade.com.jimtrade.Products_contents.Product_Info_Activity"
+    android:background="@android:color/white">
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/load_back"
+        android:layout_width="400dp"
+        android:layout_height="400dp" />
+
+    <Button
+        android:text="Inquire Now"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_bg"
+        android:id="@+id/inquiry"
+        style="@style/button_tablet" />
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_below="@+id/inquiry"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/category_heading"
+            android:textSize="24dp"
+            android:textColor="#0F54AF"
+            android:textStyle="bold"
+            android:text="Category:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/category_name"
+            android:textSize="24dp"
+            android:textColor="#0F54AF"
+            android:layout_below="@+id/category_heading"
+            android:text="category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/features_header"
+        android:text="Product Features:"
+        android:textSize="24dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#0F54AF"
+        android:textStyle="bold"
+        android:layout_below="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/features"
+        android:textSize="24dp"
+        android:layout_below="@+id/features_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/index"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/count12"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollme"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#1653A4"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_below="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#6ECEF4"/>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_below="@+id/view1"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="jimtrade.com.jimtrade.LoginActivity">
+
+
+                <TextView
+                    android:id="@+id/already"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/already_register"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0F54AF" />
+
+            <EditText
+                android:id="@+id/edt1"
+                android:textSize="16dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/edt2"
+                android:inputType="textPassword"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <Button
+                android:id="@+id/button1"
+                android:text="  Sign In  "
+                style="@style/button_text"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_bg"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="New User?"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+
+                android:id="@+id/new_mem"
+                android:layout_marginTop="10dp"
+                style="@style/button_text"
+                android:text="Join Free"
+                android:background="@drawable/layout_bg"
+                />
+
+
+
+            <TextView
+                android:id="@+id/forgotpassword"
+                android:text="@string/log_forgot_password"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0F54AF" />
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/skip"
+                style="@style/button_text"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/linear1"
+                android:visibility="gone"
+                android:text="Skip Login"
+                android:background="@drawable/layout_bg"
+               />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

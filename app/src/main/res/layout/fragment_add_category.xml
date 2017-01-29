@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="jimtrade.com.jimtrade.Categories.Add_category">
+
+    <TextView
+        android:id="@+id/head"
+        android:text="Enter the Name of Categories below to Subscribe:"
+        android:textSize="16dp"
+        android:textColor="#0F54AF"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/autoComplete"
+        android:hint="Search categories to add...."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/head"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/head"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/action_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl1"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/autoComplete"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:id="@+id/Categories"
+            android:text="Categories"
+            android:visibility="invisible"
+            android:textColor="#0F54AF"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/rl1"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/view"
+        android:layout_width="fill_parent"
+        android:visibility="invisible"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <!-- List View -->
+    <ListView
+        android:id="@+id/list2"
+        android:layout_below="@id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

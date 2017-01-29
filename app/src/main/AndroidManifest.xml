@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jimtrade.com.jimtrade" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name=".WelcomeScreen"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".RegisterNew"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Inquiry.ForgotPassword"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".SubCategoryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".ProductScreenFragments"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".SupplierScreenFragments"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Second_Level_Category"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Image_zoom"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Send_Inquiry.Send_Inquiry_Product"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Inquiry.Inquiry_Login"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Send_Inquiry.Send_Inquiry_Supplier"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Mails.Sent"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Mails.Receive"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Mails.Sent_body"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Mails.Receive_body"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Categories.Categories"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_categories" >
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".PrivacyPolicy"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".TermsOfService"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".Feedback"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".FAQs"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".OTP_Process.OTP"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+        <activity
+            android:name=".OTP_Process.OTPverify"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" />
+        <activity
+            android:name=".Contact_Details"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" />
+        <activity
+            android:name=".Edit_contact_details"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" />
+        <activity
+            android:name=".Post_Inquiry"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" />
+        <activity
+            android:name=".My_JimTrade"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" />
+        <activity
+            android:name=".search_item"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" />
+        <activity
+            android:name=".Rewards.Reward_points"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+    </application>
+
+</manifest>

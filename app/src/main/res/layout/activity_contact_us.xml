@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="jimtrade.com.jimtrade.ContactUs">
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/view12"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/contactus"
+            android:layout_centerHorizontal="true"
+            android:text="Contact Us"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#0F54AF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/company"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/contactus"
+            android:text="Jupiter Infomedia Ltd."
+            android:textColor="#0F54AF"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/address"
+            android:textSize="16dp"
+            android:layout_below="@+id/company"
+            android:text="336, Laxmi Plaza, Laxmi Industrial Estate,\nMumbai 400053. India.\nTel. : 91-22-6197 9000, 2634 1691/92\nFax: 91-22-2634 1693\nE-mail : jupiter@jimtrade.com "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/address"
+            android:id="@+id/text1234"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Click here for "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@+id/text1234"
+            android:text="Feedback"
+            android:id="@+id/clickedfeedback"
+            android:textSize="16dp"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="10dp"
+            android:textColor="#0F54AF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <TextView
+        android:id="@+id/mail_name"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="#0F54AF"
+        android:text="name"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/timing"
+        android:textSize="20dp"
+        android:text="timing"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/subject"
+        android:text="subject"
+        android:layout_below="@+id/mail_name"
+        android:textSize="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:textColor="#808080" />
+
+
+</RelativeLayout>

@@ -1,0 +1,260 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="jimtrade.com.jimtrade.Contact_Details">
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1yu"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/view12"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view1yu"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="Contact Details"
+            android:textSize="26dp"
+            android:layout_centerInParent="true"
+            android:textColor="#0F54AF"
+            android:id="@+id/headtext"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/editcontact"
+            android:background="@drawable/edit_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:background="@android:color/white"
+        android:layout_below="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/c1"
+                    android:text="Contact Person:"
+                    android:textSize="24dp"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cont_person"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c2"
+                    android:text="Designation / Job Title:"
+                    android:layout_marginTop="20dp"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#0F54AF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/designation_title"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="24dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/c3"
+                    android:textStyle="bold"
+                    android:textColor="#0F54AF"
+                    android:text="Company Name:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c4"
+                    android:text="Address:"
+                    android:textSize="24dp"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Address"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c5"
+                    android:text="City:"
+                    android:textSize="24dp"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/City"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c6"
+                    android:text="State:"
+                    android:textSize="24dp"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/State"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c7"
+                    android:text="Postal / ZIP Code:"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#0F54AF"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/pincode"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c8"
+                    android:text="Country:"
+                    android:textSize="24dp"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Country"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c9"
+                    android:text="Telephone No. :"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:textColor="#0F54AF"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Telephone_No"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c10"
+                    android:text="Mobile No. :"
+                    android:textSize="24dp"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Mobile_No"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c11"
+                    android:text="Fax:"
+                    android:textStyle="bold"
+                    android:textColor="#0F54AF"
+                    android:textSize="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Fax"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/c12"
+                    android:text="Website:"
+                    android:textStyle="bold"
+                    android:textColor="#0F54AF"
+                    android:textSize="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Website"
+                    android:textSize="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

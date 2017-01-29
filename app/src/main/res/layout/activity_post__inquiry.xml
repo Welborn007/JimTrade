@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="jimtrade.com.jimtrade.Post_Inquiry">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/view"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <ScrollView
+        android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Post_inquiry"
+                android:text="Post Inquiry"
+                android:textStyle="bold"
+                android:textColor="#0F54AF"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/product_name"
+                android:textSize="16dp"
+                android:layout_below="@+id/Post_inquiry"
+                android:hint="Please Enter Product Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/requirement"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:lines="5"
+                android:layout_below="@+id/product_name"
+                android:hint="Provide details like product specification, usage / application etc for best quotes."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/submit_inquiry"
+                android:background="@drawable/layout_bg"
+                android:layout_below="@+id/requirement"
+                android:layout_marginTop="10dp"
+                style="@style/button_text"
+                android:text="Submit"
+                 />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0F54AF"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <!-- Product ID -->
+    <TextView
+        android:id="@+id/product_id"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/thumbnail"
+         />
+
+
+    <!-- Supplier ID -->
+    <TextView
+        android:id="@+id/supplier_id"
+        android:layout_below="@+id/product_id"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@+id/thumbnail"
+        android:id="@+id/supplier"
+        android:layout_below="@+id/product_id"
+        android:text="Supplier :"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Supplier name -->
+    <TextView
+        android:id="@+id/supplier_name"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#0F54AF"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_id"
+        android:layout_toRightOf="@+id/supplier"
+        android:textSize="22dp" />
+
+
+    <!-- Category ID -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/category_id"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Inquire Now"
+        android:layout_below="@+id/image"
+        android:textSize="22dp"
+        android:padding="5dp"
+        android:layout_height="40dp"
+        android:layout_width="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/layout_bg"
+        style="@style/button_tablet"
+        android:id="@+id/inquiry"
+        />
+
+
+</RelativeLayout>

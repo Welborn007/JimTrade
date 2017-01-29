@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jimtrade.com.jimtrade.OTP_Process.OTP">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <TextView
+        android:id="@+id/entrytext"
+        android:layout_below="@+id/view1"
+        android:text="Please Enter your valid 10 digit mobile number for verification"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/entrytext"
+        android:textSize="24dp"
+        android:text="+91"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp" />
+
+    <EditText
+        android:id="@+id/mobno"
+        android:layout_toRightOf="@+id/code"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/entrytext"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:text="Proceed"
+        style="@style/button_tablet"
+        android:layout_margin="20dp"
+        android:background="@drawable/layout_bg"
+        android:layout_below="@+id/mobno"
+         />
+
+    <Button
+        android:id="@+id/skip"
+        android:text="Skip"
+        style="@style/button_tablet"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/proceed"
+        android:background="@drawable/layout_bg"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="jimtrade.com.jimtrade.FAQs">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/view"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <ScrollView
+        android:layout_below="@+id/view1"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:text="FAQ\'s"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#0F54AF"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/one"
+                android:text="1] Why should You register with JimTrade App?"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#0F54AF"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Registration to JimTrade App is free of cost. As a member, you get the benefit of our services such as product and supplier search, inquiry, Trade Alert. There are no hidden costs."
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="2] What do I need to register?"
+                android:layout_width="wrap_content"
+                android:textColor="#0F54AF"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="For free registration, all you need is a valid e-mail address, a login name and a password. Your complete contact details are also necessary so that we can send our free newsletters to you.\n\nOnce you\'ve registered, you can use this same login name and password for all products and supplier inquiries. You need not re-enter your entire contact details. Your stored contact details will be send to suppliers for further communication."
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="#0F54AF"
+                android:textSize="16dp"
+                android:text="3] What do you do with my registration information? (Privacy Policy)"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="JimTrade is committed to keep your information confidential. You registration information will never be given out or sold to other parties. For more information, please read our Privacy Policy."
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="4] What are the guidelines for choosing a password? "
+                android:layout_width="wrap_content"
+                android:textColor="#0F54AF"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="We suggest the following general guidelines:\n\u2022 Use your email address as your loginname. \n\u2022 Use at least eight characters. \n\u2022 Make a password easy for you to remember but hard for someone else to guess. \n\u2022 Avoid passwords closely related to your personal information, e.g. using your login name or company name as your password. \n\u2022 Use a mixture of letters, numbers and punctuation marks - but do not use spaces."
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="5] How to view and access the MyJimTrade user dashboard?"
+                android:textColor="#0F54AF"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="To view the MyJimTrade user Dashboard, the user needs to be logged in. Once user is logged in the dashboard details are visible to the user or else a Login screen appears."
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="6] How to send an Inquiry?"
+                android:textColor="#0F54AF"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:text="First to send an Inquiry the user should be Logged-In else a login windows appears on clicking \'Inquire Now\' button. If the User is already Logged-In then the user is migrated to the 'Inquiry window' once \'Inquire Now\' button is clicked."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="7] How do I reset my password?"
+                android:textColor="#0F54AF"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:text="In case you have forgotten your password, click on 'Forgot Password?' in Login screen to recover your password. Once in the Login screen, you have to enter your registered email-id with Jimtrade.com to recover your password."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="8] How to view Subscribed categories and add new category to Subscribed category list?"
+                android:textColor="#0F54AF"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="To view the Subscribed Categories, the user needs to be Logged-In. Once user is Logged-In, open 'My JimTrade', which shows the dashboard. In Dashboard click on 'Subscribed Categories', on clicking the window, the Subscribed category list appears which shows all the categories to which the user is subscribed to. Also there is a button to remove or unsubscribe an unwanted category. To add a new category the user needs to search the desired category in the search box and click on 'Add' button."
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text1234"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Click here for "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Feedback"
+                android:id="@+id/clickedfeedback"
+                android:textSize="16dp"
+                android:textColor="#0F54AF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

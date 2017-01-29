@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="jimtrade.com.jimtrade.TermsOfService">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#1653A4"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/view"
+        android:layout_height="1dp"
+        android:background="#6ECEF4"/>
+
+    <TextView
+        android:id="@+id/termsofservice"
+        android:text="Terms Of Service"
+        android:layout_below="@+id/view1"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:padding="10dp"
+        android:textColor="#0F54AF"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:layout_below="@+id/termsofservice"
+        android:id="@+id/termsservice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></WebView>
+
+</RelativeLayout>

@@ -1,0 +1,254 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+   xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#1653A4"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#6ECEF4"/>
+
+
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/dashboard"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#0F54AF"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/holder"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/customborder"
+            android:layout_below="@+id/txt12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:textSize="16dp"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:text="Confirm your email address and earn 100 Reward points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/confirm_email12"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btn1"
+                    android:layout_below="@id/confirm_email12"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#0F54AF"
+                    android:text="Confirm email Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mobileotp"
+                android:visibility="gone"
+                android:layout_below="@+id/rl4"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sample"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    android:text="Verified Mobile Number:"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="16dp"
+                    android:id="@+id/mobinum"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:text="Unverified"
+                    android:layout_below="@+id/sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Verify your Mobile Number"
+                    android:textColor="#0F54AF"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:id="@+id/sample_text"
+                    android:layout_below="@+id/mobinum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btn2"
+                    android:layout_below="@id/sample_text"
+                    android:textColor="#0F54AF"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Verify Mobile Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     />
+
+                <TextView
+                    android:id="@+id/changenum"
+                    android:textSize="16dp"
+                    android:textColor="#0F54AF"
+                    android:layout_below="@+id/btn2"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:text="Change Verified Mobile Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_below="@id/holder"
+        android:text="@string/receive_inquiries"
+        android:textColor="#0F54AF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_below="@+id/holder"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_below="@+id/txt2"
+        android:text="Inquiries Sent"
+        android:textColor="#0F54AF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_below="@id/txt3"
+        android:text="Subscribed Categories"
+        android:textColor="#0F54AF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txt9"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_below="@id/txt4"
+        android:text="Reward Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txt10"
+        android:layout_below="@id/txt4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/contactdetails"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt5"
+            android:textColor="#0F54AF"
+            android:text="Contact Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
