@@ -28,6 +28,8 @@ public class AboutUs extends Activity {
     SharedPreferences sharedpreferences1;
     SharedPreferences.Editor editor1;
 
+    //Hello world
+
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
